@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i,n;
+	float ratarata, jumlah;
+	int data [100];
+	jumlah=0;
+	cout<<"masukkan jumlah array= ";
+	cin>>n;
+	for (i=0;i<n;i++)
+	{
+		cout<<"masukkan data ke-"<<i+1<<" = ";
+		cin>>data[i];
+
+		jumlah=jumlah+data[i];
+	}
+		
+	ratarata=jumlah/n;
+	cout<<"jumlah= "<<jumlah<<endl;
+	cout<<"rata-rata= "<<ratarata<<endl;
+	
+	return 0;
+}
